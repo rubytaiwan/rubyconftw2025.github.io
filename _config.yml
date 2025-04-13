@@ -1,7 +1,7 @@
 title: RubyConf Taiwan x COSCUP 2025
 description: Conference for Open Source Coders, Users & Promoters
 email: info@rubyconf.tw
-baseurl: ""
+baseurl: "https://2025.rubyconf.tw"
 url: ""
 
 plugins:
