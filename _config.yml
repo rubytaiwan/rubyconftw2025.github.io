@@ -1,0 +1,22 @@
+title: RubyConf Taiwan x COSCUP 2025
+description: Conference for Open Source Coders, Users & Promoters
+email: info@rubyconf.tw
+baseurl: ""
+url: ""
+
+plugins:
+  - jekyll-tailwindcss
+
+tailwindcss:
+  css_path: "./_tailwind.css"
+  
+mail:
+  contact: "contact@rubyconf.tw"
+
+links:
+  cfp: https://pretalx.coscup.org/coscup-2025/cfp
+  cfs: https://coscup.org/2025/en/sponsorship/
+  cfv: https://volunteer.coscup.org/
+conf:
+  root_url: 'https://rubyconf.tw'
+  about_us: 'https://ruby.tw'

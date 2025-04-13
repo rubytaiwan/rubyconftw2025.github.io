@@ -1,0 +1,45 @@
+---
+layout: default
+---
+
+<section class="relative">
+  <!-- 背景圖片 -->
+  <div class="absolute inset-0 w-full h-full">
+    <img 
+      src="/assets/images/2023-group-photo.jpg" 
+      alt="RubyConf Taiwan 2023 Group Photo" 
+      class="w-full h-full object-cover"
+    />
+  </div>
+  
+  <!-- 紅色遮罩 - 調整了透明度和顏色 -->
+  <div class="absolute inset-0 bg-red-500 opacity-60"></div>
+  
+  <!-- 內容區塊 -->
+  <div class="relative z-10 py-16 text-white">
+    <div class="container mx-auto px-4 text-center">
+      <h1 class="text-4xl md:text-5xl font-bold mb-4 shadow-text">RubyConf Taiwan x COSCUP 2025</h1>
+      <h2 class="text-2xl md:text-3xl mb-8 shadow-text">Ruby Language and Open Source Summit: Taiwan's Premier Community Convergence</h2>
+      <p class="text-xl mb-8 shadow-text">Conference for Ruby Language Open Source Coders, Users & Promoters</p>
+      <div class="flex flex-wrap justify-center gap-4">
+        <a href="{{site.links.cfp}}" class="bg-white text-red-600 hover:bg-gray-100 px-6 py-3 rounded-lg font-bold">Call For Proposals (Open 2025/4/19)</a>
+        <a href="{{site.links.cfs}}" class="bg-white text-red-600 hover:bg-gray-100 px-6 py-3 rounded-lg font-bold">Sponsor Us</a>
+        <a href="{{site.links.cfv}}" class="bg-white text-red-600 hover:bg-gray-100 px-6 py-3 rounded-lg font-bold">Call For Volunteer</a>
+      </div>
+      <p class="mt-8 text-xl font-bold shadow-text">8/9 – 8/10</p>
+      <p class="mt-8 text-xl font-bold shadow-text">AAEON Building NTUST, Taiwan</p>
+    </div>
+  </div>
+</section>
+
+<section class="py-16 bg-white hidden">
+  <div class="container mx-auto px-4">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+      <div class="bg-gray-50 p-8 rounded-lg shadow-md">
+        <h2 class="text-2xl font-bold mb-4">Sponsor Us</h2>
+        <p class="mb-4">COSCUP 過去三年平均約有超過 3,000 人次的會眾和超過 20 個開源技術或議題社群一同參與，同時也有與超過 7 個國際的開源社群或組織連結合作。</p>
+        <a href="{{site.links.cfs}}" class="inline-block mt-4 text-red-600 hover:text-red-800 font-bold">更多資訊</a>
+      </div>
+    </div>
+  </div>
+</section>
