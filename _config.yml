@@ -9,6 +9,7 @@ plugins:
 
 tailwindcss:
   css_path: "./_tailwind.css"
+  config: "./tailwind.config.js"  # 添加此行指定 tailwind.config.js 位置
   
 mail:
   contact: "contact@rubyconf.tw"
