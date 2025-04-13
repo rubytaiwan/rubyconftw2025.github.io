@@ -31,29 +31,6 @@ jobs:
         id: pages
         uses: actions/configure-pages@v4
       
-      - name: Create Tailwind Config
-        run: |
-          if [ ! -f "tailwind.config.js" ]; then
-            echo "Creating tailwind.config.js"
-            cat > tailwind.config.js << 'EOL'
-            /** @type {import('tailwindcss').Config} */
-            module.exports = {
-              content: [
-                "./_drafts/**/*.md",
-                "./_includes/**/*.html",
-                "./_layouts/**/*.html",
-                "./_pages/**/*.{html,md}",
-                "./_posts/**/*.md",
-                "./*.{html,md}",
-              ],
-              theme: {
-                extend: {},
-              },
-              plugins: [],
-            }
-            EOL
-          fi
-      
       - name: Build Jekyll site
         run: bundle exec jekyll build --baseurl "${{ steps.pages.outputs.base_path }}" --verbose
         env:
