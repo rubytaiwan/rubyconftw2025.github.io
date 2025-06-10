@@ -1,6 +1,15 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;700&display=swap");
 @import "tailwindcss";
 
 @layer base {
+  [x-cloak] {
+    @apply hidden;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
   body {
     @apply font-sans text-gray-800;
   }
@@ -19,4 +28,61 @@
   .shadow-text {
     text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
   }
+}
+
+@theme {
+  --font-sans: "Noto Sans", sans-serif;
+  /* Blue colors */
+  --color-blue-light: #e6ebef;
+  --color-blue-light-hover: #d9e2e7;
+  --color-blue-light-active: #b0c2cc;
+
+  --color-blue-normal: #003b5c;
+  --color-blue-normal-hover: #003553;
+  --color-blue-normal-active: #002f4a;
+
+  --color-blue-dark: #002c45;
+  --color-blue-dark-hover: #002337;
+  --color-blue-dark-active: #001b29;
+  --color-blue-darker: #001520;
+
+  /* Green colors */
+  --color-green-light: #e6f6f4;
+  --color-green-light-hover: #d9f2ef;
+  --color-green-light-active: #b0e4dd;
+
+  --color-green-normal: #00a991;
+  --color-green-normal-hover: #009883;
+  --color-green-normal-active: #008774;
+
+  --color-green-dark: #007f6d;
+  --color-green-dark-hover: #006557;
+  --color-green-dark-active: #004c41;
+  --color-green-darker: #003b33;
+
+  /* White scale */
+  --color-white-50: #fcfefe;
+  --color-white-100: #f5fdfc;
+  --color-white-200: #f1fbfa;
+  --color-white-300: #eafaf8;
+  --color-white-400: #e6f9f7;
+  --color-white-500: #e0f7f5;
+  --color-white-600: #cce1df;
+  --color-white-700: #9fafae;
+  --color-white-800: #7b8887;
+  --color-white-900: #5e6867;
+
+  /* Red colors */
+  --color-red-light: #fdebed;
+  --color-red-light-hover: #fbe1e3;
+  --color-red-light-active: #f7c2c6;
+
+  --color-red-normal: #e63946;
+  --color-red-normal-hover: #cf333f;
+  --color-red-normal-active: #b82e38;
+
+  --color-red-dark: #ad2b35;
+  --color-red-dark-hover: #8a222a;
+  --color-red-dark-active: #671a1f;
+  --color-red-darker: #511419;
 }
