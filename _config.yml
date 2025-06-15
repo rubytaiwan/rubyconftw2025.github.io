@@ -21,3 +21,24 @@ links:
 conf:
   root_url: 'https://rubyconf.tw'
   about_us: 'https://ruby.tw'
+footer:
+  title: "©Rubyconf Taiwan 2025"
+  coc:
+    title: Code of Conduct
+  team_member:
+    title: Team Member
+  rubytw:
+    title: Ruby Taiwan
+    href: https://ruby.tw
+staffs:
+  -
+    name: Mu-Fan Teng
+    avatar: /assets/images/ryudoawaru.jpg
+    x_id: ryudoawaru
+    facebook: https://www.facebook.com/ryudoawaru
+    ig_id: ryudoawaru
+    github_id: ryudoawaru
+  -
+    name: Xillinna
+    avatar: /assets/images/Xillinna.jpg
+    ig_id: xillinna.daily
