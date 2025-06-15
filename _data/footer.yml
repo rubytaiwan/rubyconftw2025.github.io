@@ -1,0 +1,33 @@
+title: "©Rubyconf Taiwan 2025"
+
+coc:
+  title: Code of Conduct
+
+team_member:
+  title: Team Member
+
+rubytw:
+  title: Ruby Taiwan
+  href: https://ruby.tw
+
+social_links:
+  - name: Twitter
+    href: https://x.com/rubyconftw
+    icon: twitter
+  - name: Facebook
+    href: https://www.facebook.com/rubyconftw
+    icon: facebook
+  - name: Instagram
+    href: https://www.instagram.com/rubytaiwan2008
+    icon: instagram
+
+staffs:
+  - name: Mu-Fan Teng
+    avatar: /assets/images/ryudoawaru.jpg
+    x_id: ryudoawaru
+    facebook: https://www.facebook.com/ryudoawaru
+    ig_id: ryudoawaru
+    github_id: ryudoawaru
+  - name: Xillinna
+    avatar: /assets/images/Xillinna.jpg
+    ig_id: xillinna.daily
