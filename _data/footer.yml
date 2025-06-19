@@ -23,11 +23,29 @@ social_links:
 
 staffs:
   - name: Mu-Fan Teng
+    title: Chief Organizer
     avatar: /assets/images/ryudoawaru.jpg
     x_id: ryudoawaru
     facebook: https://www.facebook.com/ryudoawaru
     ig_id: ryudoawaru
     github_id: ryudoawaru
   - name: Xillinna
+    title: Main Designer
     avatar: /assets/images/Xillinna.jpg
     ig_id: xillinna.daily
+  - name: Cadie Bui
+    title: Website Frontend Engineer
+    avatar: /assets/images/cadie.jpg
+    github_id: CadieBui
+  - name: Kasa Hsiao
+    title: Code Party Organizer
+    avatar: /assets/images/umbrella-h.jpg
+    github_id: umbrella-h
+  - name: Yu-Chi Wei
+    title: Staff
+    avatar: /assets/images/snowmint.jpg
+    github_id: snowmint
+  - name: Meo Chiang
+    title: Website Frontend Engineer
+    avatar: /assets/images/meo2326cc.png
+    github_id: meo2326cc
