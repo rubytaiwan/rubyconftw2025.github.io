@@ -1,0 +1,523 @@
+- session_id: op
+  type: session
+  start_time: "9:10"
+  end_time: "9:35"
+  duration: "0:25"
+  day: 1
+  track: RB105
+  lang: en
+  speaker_id: D11C51
+  speaker_avatar: 
+  speaker_name: Uesada Akihito / Mu-Fan Teng
+  speaker_github: 
+  speaker_x: 
+  speaker_bio: 
+  subject: Ruby 與開源智慧城市
+  abstract: TBD
+- session_id: prime
+  type: session
+  start_time: "9:35"
+  end_time: "10:20"
+  duration: "0:45"
+  day: 1
+  track: RB105
+  lang: en
+  speaker_id: C9493B
+  speaker_avatar: matz.jpg
+  speaker_name: MATSUMOTO Yukihiro (Matz) 
+  speaker_github: matz
+  speaker_x: yukihiro_matz
+  speaker_bio: Creator of Ruby, Heroku
+  subject: TBD
+  abstract: TBD
+- session_id: b1
+  type: break
+  start_time: "10:20"
+  end_time: "10:30"
+  duration: "0:10"
+  day: 1
+  track: RB105
+  subject: Break
+  abstract: 
+- session_id: s1
+  type: session
+  start_time: "10:30"
+  end_time: "11:00"
+  duration: "0:30"
+  day: 1
+  track: RB105
+  lang: en
+  speaker_id: YTJHQ7
+  speaker_avatar: segiddins.jpg
+  speaker_name: Samuel Giddins
+  speaker_github: segiddins
+  speaker_x: segiddins
+  speaker_bio: Security Engineer in Residence, Ruby Central
+  subject: Funding Ruby Infrastructure as a Non-Profit
+  abstract: 'Over the past half decade, software supply chains have become an increasing focus for governments and large companies. This has created an interesting dynamic, as Ruby infrastructure (our package manager, package repository, etc.) used to be developed by volunteers. This is the story of how Ruby Central has adapted to the changing times, and has managed to fund work (including a full-time employee!) on our infrastructure. Along with the story of Ruby Central''s evolution, we''ll cover the current landscape surrounding funding and governance of infrastructural open source projects, and hopefully come away feeling hopeful about the future of critical open source.'
+- session_id: s2
+  type: session
+  start_time: "10:30"
+  end_time: "11:00"
+  duration: "0:30"
+  day: 1
+  track: TR209
+  lang: en
+  speaker_id: WVCWXV
+  speaker_avatar: KuokkanenSampo.jpg
+  speaker_name: Sampo Kuokkanen
+  speaker_github: sampoKuokkanen
+  speaker_x: KuokkanenSampo
+  speaker_bio: Head of Evil Martians GK
+  subject: What is happening with strings in Ruby and why is it feeling chilly? 🥶
+  abstract: "1. What is happening with strings in the Ruby source code? \n2. Ruby Archaeology: How did we get frozen strings with a magic comment in the first place? \n2. What effect will this have on everyday Rubyists? \n3. What are \"chilled\" strings? Is it just like shaved ice with mango? \n4. Why do we even freeze strings in Ruby? \n5. What will change? \n\nA deep dive into strings in Ruby. The Ruby string.c file is currently 13,198 lines long (in contrast, if you exclude comments, the string.rb file is only one line of code!), so it should come as no surprise that it's sometimes not easy to follow what is changing around there. \n\nWith Ruby 3.4, we got chilled strings, and after that, we can get rid of the magic comments that probably decorate almost all of our Ruby files! Not so fast, though. What are chilled strings? And why do we have to keep the magic comments in our files for a little bit longer? \n\nBut why is this change happening, and what historical background does it have? What will it mean for ordinary Rubyists like us? \n\nAnd we'll take a look at what Matz said before Ruby 3: \"All String literals are immutable (frozen) on Ruby 3\". Will this finally be true for Ruby? \n\nAnd actually, there is a way of getting default frozen strings on current Rubies too... like almost always with Ruby, there is a gem for that."
+- session_id: b2
+  type: break
+  start_time: "11:00"
+  end_time: "11:05"
+  duration: "0:05"
+  day: 1
+  track: TR209
+  lang: 
+  speaker_id: 
+  speaker_avatar: 
+  speaker_name: 
+  speaker_bio: 
+  subject: Break
+  abstract: 
+- session_id: s3
+  type: session
+  start_time: "11:05"
+  end_time: "11:35"
+  duration: "0:30"
+  day: 1
+  track: TR209
+  lang: en
+  speaker_id: AFH9W3
+  speaker_avatar: hasumikin.jpg
+  speaker_name: Hitoshi HASUMI
+  speaker_github: hasumikin
+  speaker_x: hasumikin
+  speaker_bio: Creator of PicoRuby, Committer of mruby and mruby/c
+  subject: Well, PicoRuby Can Do That
+  abstract: "Ruby might just be the only language in the world built around the joy of programming.\nPicoRuby adds a new kind of fun to that joy --- not just as an IoT platform, but as a fresh and exciting new way to experience Ruby itself.\nLet AI take care of the strict and tedious parts. With PicoRuby, let's go back to where programming was all about creativity and delight."
+- session_id: b3
+  type: break
+  start_time: "11:35"
+  end_time: "11:40"
+  duration: "0:05"
+  day: 1
+  track: TR209
+  lang: 
+  speaker_id: 
+  speaker_avatar: 
+  speaker_name: 
+  speaker_bio: 
+  subject: Break
+  abstract: 
+- session_id: s4
+  type: session
+  start_time: "11:40"
+  end_time: "12:10"
+  duration: "0:30"
+  day: 1
+  track: TR209
+  lang: en
+  speaker_id: TD3ZDW
+  speaker_avatar: crplanas.jpg
+  speaker_name: Cristian Planas
+  speaker_github: Gawyn
+  speaker_x: crplanas
+  speaker_bio: Senior Staff Engineer at Zendesk
+  subject: Rails Scales! - Why startups fail and how you can succeed
+  abstract: "Many engineers hold the belief that Rails does not scale. Indeed, many startups have problems scaling their Rails application. At the same time, massive companies like Shopify or Zendesk run Rails monoliths at a planetary scale. How do they do it?\n\nIn this presentation, Cristian Planas, former start-up founder/CTO and Group Tech Lead for performance at Zendesk will share with you what these companies know that you don't. He will introduce you to the scalability problems that he had in his start-up, how he failed at solving them, and what are the actual options to fix them."
+- session_id: b4
+  type: break
+  start_time: "12:10"
+  end_time: "13:30"
+  duration: "1:20"
+  day: 1
+  track: TR209
+  lang: 
+  speaker_id: 
+  speaker_avatar: 
+  speaker_name: 
+  speaker_bio: 
+  subject: Lunch Break
+  abstract: 
+- session_id: s5
+  type: session
+  start_time: "13:30"
+  end_time: "14:00"
+  duration: "0:30"
+  day: 1
+  track: TR209
+  lang: en
+  speaker_id: KLEUNM
+  speaker_avatar: s01.jpg
+  speaker_name: Ryo Kajiwara
+  speaker_github: sylph01
+  speaker_x: s01
+  speaker_bio: A wild (freelance) programmer. I can do cryptography and authentication/authorization a little.
+  subject: End-to-End Encryption Saves Lives. You Can Start Saving Lives In Ruby, Too
+  abstract: "\"Why do you need End-to-End Encryption in Ruby? Because...\"\n\nThis talk will cover the Ruby implementation of the Messaging Layer Security Protocol (RFC 9420), and recent developments in Ruby's modern cryptography. Messaging Layer Security enables authenticated key exchange in group messaging systems, providing end-to-end security to messaging apps. By learning how end-to-end encryption in group messaging works, you could be more confident about the security of your daily messages that are sent through your messaging apps. And yes, it does save actual lives."
+- session_id: b5
+  type: break
+  start_time: "14:00"
+  end_time: "14:05"
+  duration: "0:05"
+  day: 1
+  track: TR209
+  lang: 
+  speaker_id: 
+  speaker_avatar: 
+  speaker_name: 
+  speaker_bio: 
+  subject: Break
+  abstract: 
+- session_id: s6
+  type: session
+  start_time: "14:05"
+  end_time: "14:35"
+  duration: "0:30"
+  day: 1
+  track: TR209
+  lang: en
+  speaker_id: K793LW
+  speaker_avatar: kaz0505.jpg
+  speaker_name: Kazuaki TANAKA
+  speaker_github: kaz0505
+  speaker_x: 
+  speaker_bio: "Core developer of mruby and mruby/c Associate Professor, Kyushu Institute of Technology Embedded Systems and IoT Researcher In particular"
+  subject: "From Scripts to Circuits: IoT Applications with mruby/c"
+  abstract: "mruby/c is a lightweight implementation of mruby, designed specifically for environments with limited resources, supprting for IoT device development. It enables Ruby programs to run with minimal memory consumption; even the smallest application requires only about 20 KB of memory.\n\nOne of the key features of mruby/c is its concurrent execution capability, a feature not found in CRuby or standard mruby. This allows multiple programs to run in parallel without the need for an operating system. Additionally, mruby/c includes power-saving mechanisms, enabling IoT devices to operate for extended periods on limited power sources.\n\nIn this session, we'll explore how mruby/c functions, with a focus on its power-efficiency and portability to various hardware platforms. We'll conclude with a hands-on demonstration using a one-chip microcontroller."
+- session_id: b6
+  type: break
+  start_time: "14:35"
+  end_time: "14:40"
+  duration: "0:05"
+  day: 1
+  track: TR209
+  lang: 
+  speaker_id: 
+  speaker_avatar: 
+  speaker_name: 
+  speaker_bio: 
+  subject: Break
+  abstract: 
+- session_id: s7
+  type: session
+  start_time: "14:40"
+  end_time: "15:10"
+  duration: "0:30"
+  day: 1
+  track: TR209
+  lang: en
+  speaker_id: AP8HCA
+  speaker_avatar: hachiblog.jpg
+  speaker_name: Hayao Kimura
+  speaker_github: hayaokimura
+  speaker_x: hachiblog
+  speaker_bio: freee 株式会社 - Web Application Developer
+  subject: RISC-V CPU emulator made with Ruby
+  abstract: Does low-level programming feel intimidating? In this session, we'll build a RISC-V CPU emulator entirely in Ruby, step by step, while clearly explaining the CPU's core cycle—fetch, decode, and execute—and the essentials of binary analysis. Learn how web engineers can venture into an unfamiliar layer of computing with a familiar language, and experience the spirit of 'Build with Ruby.'
+- session_id: b7
+  type: break
+  start_time: "15:10"
+  end_time: "15:15"
+  duration: "0:05"
+  day: 1
+  track: TR209
+  lang: 
+  speaker_id: 
+  speaker_avatar: 
+  speaker_name: 
+  speaker_bio: 
+  subject: Break
+  abstract: 
+- session_id: s8
+  type: session
+  start_time: "15:15"
+  end_time: "15:45"
+  duration: "0:30"
+  day: 1
+  track: TR209
+  lang: en
+  speaker_id: 8W8G3J
+  speaker_avatar: spikeolaf.jpg
+  speaker_name: Yuichiro Kaneko
+  speaker_github: yui-knk
+  speaker_x: spikeolaf
+  speaker_bio: CRuby committer. The author of https://github.com/ruby/lrama LALR parser generator.
+  subject: Understanding Ruby Grammar Through Conflicts
+  abstract: "Have you ever created a parser using an LR parser generator such as Lrama or GNU Bison? If so, you've likely encountered conflicts – perhaps even many times – leaving you feeling lost and unsure of what to do. However, conflicts offer incredibly valuable insights for understanding the grammar of programming languages.\nIn this presentation, we will delve into the structure of Ruby's grammar by intentionally introducing changes to its syntax, triggering conflicts, and then analyzing those conflicts. Through this process, we aim to deepen our understanding of how Ruby's grammar is constructed."
+- session_id: b8
+  type: break
+  start_time: "15:45"
+  end_time: "15:50"
+  duration: "0:05"
+  day: 1
+  track: TR209
+  lang: 
+  speaker_id: 
+  speaker_avatar: 
+  speaker_name: 
+  speaker_bio: 
+  subject: Break
+  abstract: 
+- session_id: s9
+  type: session
+  start_time: "15:50"
+  end_time: "16:20"
+  duration: "0:30"
+  day: 1
+  track: TR209
+  lang: en
+  speaker_id: MDMME3
+  speaker_avatar: okuramasafumi.jpg
+  speaker_name: OKURA Masafumi
+  speaker_github: okuramasafumi
+  speaker_x: okuramasafumi
+  speaker_bio: Chief organizer of #kaigionrails
+  subject: 'Why doesn''t Ruby have Boolean class?'
+  abstract: "Ruby is a fully object-oriented language. While other OO languages such as Java have a `Boolean` class, Ruby doesn't have it. It doesn't have methods like `to_bool`. So, is it bad for Ruby programmers? No, we feel comfortable without `Boolean` class or `to_bool` method.\nThis leads to questions: What is Boolean, what is class and how Ruby designs it? And finally, why doesn't Ruby have Boolean class?\nThis talk answers \"Why doesn't Ruby have Boolean class?\" question and explores the world of OOP and language design."
+- session_id: s10
+  type: session
+  start_time: "10:00"
+  end_time: "10:30"
+  duration: "0:30"
+  day: 2
+  track: TR209
+  lang: cht
+  speaker_id: TY3ELY
+  speaker_avatar: EtrexKuo.jpg
+  speaker_name: 卡米哥 / Etrex Kuo
+  speaker_github: etrex
+  speaker_x: EtrexKuo
+  speaker_bio: Line API Expert
+  subject: 用 Ruby 寫一個 MCP Server
+  abstract: |
+    我是卡米哥，一個使用 Ruby 十年的開發者。Ruby 對我來說是一種既優雅又充滿表達力的語言，只要有機會，我都希望用 Ruby 來解決問題。
+
+    這次我將分享自己用 Ruby 實作 MCP（Model Context Protocol）Server 的經驗。MCP 是一個近期討論度很高的通訊協定，實用性高，為了深入理解這個協定的設計，我從零開始打造了一個開源的 MCP Server demo。
+
+    我的演講將涵蓋以下幾個重點：
+
+    1. MCP 協定的基本結構與核心理念
+    1. 如何從零開始寫一個最小可行的 MCP Server
+    1. MCP Server 的測試方式與思路
+    1. 常見的安全性問題與應對策略
+
+    我希望透過這場分享，幫助更多開發者了解 MCP，也讓大家在聽完之後，有信心自己動手做出一個屬於自己的 MCP Server。
+- session_id: b9
+  type: break
+  start_time: "10:30"
+  end_time: "10:35"
+  duration: "0:05"
+  day: 2
+  track: TR209
+  lang: 
+  speaker_id: 
+  speaker_avatar: 
+  speaker_name: 
+  speaker_bio: 
+  subject: Break
+  abstract: 
+- session_id: s11
+  type: session
+  start_time: "10:35"
+  end_time: "11:05"
+  duration: "0:30"
+  day: 2
+  track: TR209
+  lang: en
+  speaker_id: QWF9SF
+  speaker_avatar: ioquatix.jpg
+  speaker_name: Samuel Williams
+  speaker_github: ioquatix
+  speaker_x: ioquatix
+  speaker_bio: Senior Staff Software Engineer, Shopify
+  subject: Building, Deploying, and Monitoring Ruby Web Applications with Falcon
+  abstract: "Ruby is beloved for its developer experience, but it's not always known for raw performance or scalability. With Falcon and Async, we're changing that.\n\nIn this talk, I'll walk you through building modern, concurrent Ruby web applications using Falcon — a high-performance async web server — and Async, the foundation for non-blocking I/O in Ruby. We'll cover the full lifecycle of a production-ready app:\n\n- **Building**: Writing non-blocking, fiber-based web apps using Async and Protocol::HTTP.\n- **Deploying**: Running Falcon in production environments, from containers to the cloud.\n- **Monitoring**: Observability strategies for async systems — logging, metrics, and tracing.\n\nWhether you're serving APIs, streaming data, or scaling real-time features, this talk will equip you with practical tools and patterns to confidently run async Ruby apps in production."
+- session_id: b10
+  type: break
+  start_time: "11:05"
+  end_time: "11:10"
+  duration: "0:05"
+  day: 2
+  track: TR209
+  lang: 
+  speaker_id: 
+  speaker_avatar: 
+  speaker_name: 
+  speaker_bio: 
+  subject: Break
+  abstract: 
+- session_id: s12
+  type: session
+  start_time: "11:10"
+  end_time: "11:40"
+  duration: "0:30"
+  day: 2
+  track: TR209
+  lang: en
+  speaker_id: J7KBSL
+  speaker_avatar: skyksandr.jpg
+  speaker_name: Aleksandr Kunin
+  speaker_github: skyksandr
+  speaker_x: 
+  speaker_bio: "NexHealth.com : Backend Engineer"
+  subject: "Loosing Seat in Concurrency: A tale of Transactions and Locks"
+  abstract: "Let's say there is one seat left in the aircraft. And two people want to buy a ticket. And they submit a form at the almost same time. Who gets the seat?\nIn this talk I'll touch classic database concurrency problems, transaction isolation and anomalies, pessimistic, optimistic and advisory locking and patterns to use it."
+- session_id: b11
+  type: break
+  start_time: "11:40"
+  end_time: "11:45"
+  duration: "0:05"
+  day: 2
+  track: TR209
+  lang: 
+  speaker_id: 
+  speaker_avatar: 
+  speaker_name: 
+  speaker_bio: 
+  subject: Break
+  abstract: 
+- session_id: s13
+  type: session
+  start_time: "11:45"
+  end_time: "12:15"
+  duration: "0:30"
+  day: 2
+  track: TR209
+  lang: en
+  speaker_id: KXGSTL
+  speaker_avatar: yatish.jpg
+  speaker_name: Yatish Mehta
+  speaker_github: yatish27
+  speaker_x: yatish_me
+  speaker_bio: Staff Software Engineer, Asana
+  subject: No "Pundit" Intended
+  abstract: Has your has_access? method morphed from a straightforward guard into a tangled mess? While most Rails applications rely on Pundit, truly complex systems demand a more robust approach. In this talk, we'll dive into implementing a tuple-based authorization model—an approach leveraged by Google and other large-scale applications—right within Rails. Learn how to tackle intricate permission scenarios without migrating to an external authorization system.
+- session_id: b12
+  type: break
+  start_time: "12:15"
+  end_time: "13:30"
+  duration: "1:15"
+  day: 2
+  track: TR209
+  lang: 
+  speaker_id: 
+  speaker_avatar: 
+  speaker_name: 
+  speaker_bio: 
+  subject: Lunch Break
+  abstract: 
+- session_id: s14
+  type: session
+  start_time: "13:30"
+  end_time: "14:00"
+  duration: "0:30"
+  day: 2
+  track: TR209
+  lang: en
+  speaker_id: KVTZHB
+  speaker_avatar: ydah_.jpg
+  speaker_name: Yudai Takada
+  speaker_github: ydah_
+  speaker_x: ydah_
+  speaker_bio: CRuby committer. Committer of Lrama, committee. RuboCop RSpec team
+  subject: Joy with 3D Graphics Using Ruby
+  abstract: 'In recent years, I think we''ve often seen works and presentations on the theme of creating ''sound'' with Ruby. While audio processing is very enjoyable, graphic expression is equally attractive. In this session, I would like to share with everyone the joy of creating 3D graphics with Ruby. This session will introduce everything from the basics of 3D rendering using Ruby to practical application examples. Watching 3D objects spinning around is fun. Let''s implement that in Ruby. I''ll explain step by step so that even beginners can understand easily, and show you code that actually works. 3D graphics is an area that we may not often have the opportunity to explore, but with Ruby, we can create together while having fun. Let''s experience the world of 3D graphics that we can play with starting tomorrow.'
+- session_id: b13
+  type: break
+  start_time: "14:00"
+  end_time: "14:05"
+  duration: "0:05"
+  day: 2
+  track: TR209
+  lang: 
+  speaker_id: 
+  speaker_avatar: 
+  speaker_name: 
+  speaker_bio: 
+  subject: Break
+  abstract: 
+- session_id: s15
+  type: session
+  start_time: "14:05"
+  end_time: "14:35"
+  duration: "0:30"
+  day: 2
+  track: TR209
+  lang: cht
+  speaker_id: UNVNAN
+  speaker_avatar: cindyliu923.jpg
+  speaker_name: Cindy Liu
+  speaker_github: cindyliu923
+  speaker_x: cindyliu923
+  speaker_bio: Rails Developer, DEVCORE
+  subject: Rails Active Storage 如何避免被同事攻擊 — 你，懂 BAC 嗎？
+  abstract: |
+    Rails 的 Active Storage 雖然提供了方便的檔案上傳與管理功能，但若開發者忽略了對檔案存取的授權檢查，極可能導致 Broken Access Control（BAC）漏洞，讓使用者能未經授權下載他人的檔案。在這場分享中，我將透過實際的 Rails 範例，展示一個看似正常的 Active Storage 實作如何讓其他人輕鬆取得不該擁有的機密文件。我們也會一步步分析漏洞產生的原因，並提供具體的修補方案。我們可以思考看看，當我們取得使用者的檔案 url 的時候，表示我們就有權限取得使用者的檔案嗎？其實這樣的問題在任何軟體都有可能發生，值得身為開發者的我們多想一點
+- session_id: b14
+  type: break
+  start_time: "14:35"
+  end_time: "14:40"
+  duration: "0:05"
+  day: 2
+  track: TR209
+  lang: 
+  speaker_id: 
+  speaker_avatar: 
+  speaker_name: 
+  speaker_bio: 
+  subject: Break
+  abstract: 
+- session_id: s16
+  type: session
+  start_time: "14:40"
+  end_time: "15:10"
+  duration: "0:30"
+  day: 2
+  track: TR209
+  lang: en
+  speaker_id: KRTWYM
+  speaker_avatar: Envek.jpg
+  speaker_name: Andrey Novikov
+  speaker_github: Envek
+  speaker_x: Envek
+  speaker_bio: "Software engineer at @evilmartians"
+  subject: Nuances of running Ruby on Kubernetes
+  abstract: "It is not so difficult to \"kubernetize\" your application, but what's next? There are so many subtle things to consider to make your application performant and reliable.\n\nUnfortunately, it is easy to make it wrong: a small change in resource limits can slow your application, a wrong container liveness check will make your app crash faster under heavy load, and even following containerization best practices can make your application less performant. Let's see why!"
+- session_id: b15
+  type: break
+  start_time: "15:10"
+  end_time: "15:15"
+  duration: "0:05"
+  day: 2
+  track: TR209
+  lang: 
+  speaker_id: 
+  speaker_avatar: 
+  speaker_name: 
+  speaker_bio: 
+  subject: Break
+  abstract: 
+- session_id: s17
+  type: session
+  start_time: "15:15"
+  end_time: "15:45"
+  duration: "0:30"
+  day: 2
+  track: TR209
+  lang: cht
+  subject: "Crafting AI-Friendly Application in Ruby"
+  speaker_id: X338CA
+  speaker_avatar: elct9620.jpg
+  speaker_name: 蒼時弦也 / Aotoki Tsuruya
+  speaker_github: elct9620
+  speaker_x: elct9620
+  speaker_bio: Senior Software Engineer, Gogolook
+  abstract: |
+    今年在使用 AI 協力開發有非常多討論，有不少工具和名詞被推出。使用 Ruby 語言能怎麼應用新的方式來開發，這場演講會搭配 Golang / TypeScript 中的實務經驗作為對照，探討過去的軟體開發知識如何延伸為 AI-Friendly 的設計，以及在 Ruby 語言在 AI 生成上的優勢與劣勢。

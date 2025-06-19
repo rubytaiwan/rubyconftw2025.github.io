@@ -1,0 +1,44 @@
+<nav
+  class="hidden md:block transition-opacity duration-100 grow relative top-0 mt-25 w-full"
+>
+  <div
+    class="flex flex-col space-y-2 w-fit font-extrabold text-2xl"
+    :class="activeSection === 'top' ? '' : 'fixed left-16 top-20'"
+  >
+    <a
+      href="#speakers"
+      class="nav-link transition-colors cursor-pointer"
+      :class="activeSection === 'speakers' ? 'text-red-active' : 'text-red-light hover:text-red-light-active'"
+      @click.prevent="scrollToSection('speakers')"
+      >SPEAKERS</a
+    >
+    <a
+      href="#schedule"
+      class="nav-link transition-colors cursor-pointer"
+      :class="activeSection === 'schedule' ? 'text-red-active' : 'text-red-light hover:text-red-light-active'"
+      @click.prevent="scrollToSection('schedule')"
+      >SCHEDULE</a
+    >
+    <a
+      href="#venue"
+      class="nav-link transition-colors cursor-pointer"
+      :class="activeSection === 'venue' ? 'text-red-active' : 'text-red-light hover:text-red-light-active'"
+      @click.prevent="scrollToSection('venue')"
+      >VENUE</a
+    >
+    <a
+      href="#party"
+      class="nav-link transition-colors cursor-pointer"
+      :class="activeSection === 'party' ? 'text-red-active' : 'text-red-light hover:text-red-light-active'"
+      @click.prevent="scrollToSection('party')"
+      >PARTY</a
+    >
+    <a
+      href="#coscup"
+      class="nav-link transition-colors cursor-pointer"
+      :class="activeSection === 'coscup' ? 'text-red-active' : 'text-red-light hover:text-red-light-active'"
+      @click.prevent="scrollToSection('coscup')"
+      >COSCUP</a
+    >
+  </div>
+</nav>

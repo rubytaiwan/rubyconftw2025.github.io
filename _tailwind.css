@@ -86,3 +86,11 @@
   --color-red-dark-active: #671a1f;
   --color-red-darker: #511419;
 }
+
+.session-abstract ol {
+  @apply list-decimal list-outside ml-6 space-y-1 mb-4;
+}
+
+.session-abstract li {
+  @apply pl-2;
+}
