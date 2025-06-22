@@ -1,0 +1,31 @@
+<svg viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
+  <!-- 背景 -->
+  <rect width="400" height="400" fill="#f8f8f8"/>
+  
+  <!-- 邊框 -->
+  <rect x="1" y="1" width="398" height="398" fill="none" stroke="#e5e5e5" stroke-width="2"/>
+  
+  <!-- 主要背景圓形 -->
+  <circle cx="200" cy="180" r="80" fill="#dc2626" opacity="0.1"/>
+  
+  <!-- 人物圖示 -->
+  <g transform="translate(200, 160)">
+    <!-- 頭部 -->
+    <circle cx="0" cy="-20" r="25" fill="#dc2626" opacity="0.6"/>
+    <!-- 身體 -->
+    <ellipse cx="0" cy="20" rx="35" ry="45" fill="#dc2626" opacity="0.6"/>
+  </g>
+  
+  <!-- TBD 文字 -->
+  <text x="200" y="280" text-anchor="middle" font-family="Arial, sans-serif" font-size="32" font-weight="bold" fill="#dc2626">TBD</text>
+  
+  <!-- 說明文字 -->
+  <text x="200" y="310" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="#6b7280">To Be Determined</text>
+  
+  <!-- 裝飾線條 -->
+  <line x1="120" y1="340" x2="280" y2="340" stroke="#dc2626" stroke-width="2" opacity="0.3"/>
+  
+  <!-- 小裝飾點 -->
+  <circle cx="130" cy="340" r="3" fill="#dc2626" opacity="0.5"/>
+  <circle cx="270" cy="340" r="3" fill="#dc2626" opacity="0.5"/>
+</svg>
