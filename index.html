@@ -2,44 +2,269 @@
 layout: default
 ---
 
-<section class="relative">
-  <!-- 背景圖片 -->
-  <div class="absolute inset-0 w-full h-full">
-    <img 
-      src="/assets/images/2023-group-photo.jpg" 
-      alt="RubyConf Taiwan 2023 Group Photo" 
-      class="w-full h-full object-cover"
-    />
-  </div>
-  
-  <!-- 紅色遮罩 - 調整了透明度和顏色 -->
-  <div class="absolute inset-0 bg-red-500 opacity-60"></div>
-  
-  <!-- 內容區塊 -->
-  <div class="relative z-10 py-16 text-white">
-    <div class="container mx-auto px-4 text-center">
-      <h1 class="text-4xl md:text-5xl font-bold mb-4 shadow-text">RubyConf Taiwan x COSCUP 2025</h1>
-      <h2 class="text-2xl md:text-3xl mb-8 shadow-text">Ruby Language and Open Source Summit: Taiwan's Premier Community Convergence</h2>
-      <p class="text-xl mb-8 shadow-text">Conference for Ruby Language Open Source Coders, Users & Promoters</p>
-      <div class="flex flex-wrap justify-center gap-4">
-        <a href="{{site.links.cfp}}" class="bg-white text-red-600 hover:bg-gray-100 px-6 py-3 rounded-lg font-bold">Call For Proposals (Closes 2025-05-11 20:00 GMT+8)</a>
-        <a href="{{site.links.cfs}}" class="bg-white text-red-600 hover:bg-gray-100 px-6 py-3 rounded-lg font-bold">Sponsor Us</a>
-        <a href="{{site.links.cfv}}" class="bg-white text-red-600 hover:bg-gray-100 px-6 py-3 rounded-lg font-bold">Call For Volunteer</a>
-      </div>
-      <p class="mt-8 text-xl font-bold shadow-text">8/9 – 8/10</p>
-      <p class="mt-8 text-xl font-bold shadow-text">AAEON Building NTUST, Taiwan</p>
-    </div>
-  </div>
-</section>
+<div
+  x-data="{
+    open_id: 0,
+    activeSection: 'top',
+    is_open_mobile_nav: false,
+    at_top: true,
+    
+    init() {
+      let ticking = false;
 
-<section class="py-16 bg-white hidden">
-  <div class="container mx-auto px-4">
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-      <div class="bg-gray-50 p-8 rounded-lg shadow-md">
-        <h2 class="text-2xl font-bold mb-4">Sponsor Us</h2>
-        <p class="mb-4">COSCUP 過去三年平均約有超過 3,000 人次的會眾和超過 20 個開源技術或議題社群一同參與，同時也有與超過 7 個國際的開源社群或組織連結合作。</p>
-        <a href="{{site.links.cfs}}" class="inline-block mt-4 text-red-600 hover:text-red-800 font-bold">更多資訊</a>
+      const handleScroll = () => {
+        if (!ticking) {
+          requestAnimationFrame(() => {
+            this.updateActiveSection();
+            this.at_top = window.scrollY < 100;
+            ticking = false;
+          });
+          ticking = true;
+        }
+      };
+      
+      window.addEventListener('scroll', handleScroll);
+      setTimeout(() => {
+        this.updateActiveSection();
+        this.at_top = window.scrollY < 100;
+      }, 100);
+    },
+    
+    scrollToSection(sectionId) {
+      const element = document.getElementById(sectionId);
+      if (element) {
+        element.scrollIntoView({
+          behavior: 'smooth',
+          block: 'start'
+        });
+        this.activeSection = sectionId;
+        this.is_open_mobile_nav = false;
+      }
+    },
+    
+    updateActiveSection() {
+      const sections = ['top', 'speakers', 'schedule', 'venue', 'party', 'coscup'];
+      const scrollPos = window.scrollY;
+      const windowHeight = window.innerHeight;
+      const documentHeight = document.body.scrollHeight;
+      
+      if (scrollPos < document.getElementById('top').offsetHeight) {
+        this.activeSection = 'top';
+        return;
+      }
+      
+      let currentSection = 'speakers'; 
+
+      for (let i = 1; i < sections.length; i++) { 
+        const section = document.getElementById(sections[i]);
+        if (section) {
+          if (section.offsetTop <= scrollPos && section.offsetTop + section.offsetHeight >= scrollPos) {
+            currentSection = sections[i];
+          }
+        }
+      }
+      if (scrollPos + windowHeight >= documentHeight - 500) {
+        currentSection = 'coscup';
+      }
+      this.activeSection = currentSection;
+    }
+  }"
+  class="relative overflow-x-hidden"
+  x-cloak
+>
+  <a href="https://coscup.org/" target="_blank">
+    <div class="absolute flex justify-center box-content right-0 md:w-40 md:py-5 px-20 w-28 py-2 bg-white rotate-45 translate-x-[30%] md:translate-y-[25%] translate-y-[50%]">
+      {% include images/coscup_x5F_Logo.svg %}
+    </div>
+  </a>
+  <div
+    class="hidden md:block fixed top-1/2 left-0 w-full max-w-screen h-full max-h-[304px] transition-opacity duration-300"
+  >
+    {% include images/cityBg.svg %}
+  </div>
+
+  <!-- mobile navigation -->
+  {% include sp_nav.html %}
+  <!-- desktop navigation -->
+  <div class="relative md:pl-16 md:pr-10 md:grid grid-cols-5 gap-x-5">
+    {% include pc_nav.html %}
+    <div class="col-span-4 relative z-10 space-y-10">
+      {% include speakers.html %}
+      <div id="schedule" x-data="{ day: 1 }">
+        <!-- Day Selector -->
+        <div class="grid md:grid-cols-2 items-center justify-items-center bg-blue-light text-blue-normal font-bold text-base mb-6">
+          <div x-on:click="day = 1" x-bind:class="{ 'bg-red-normal text-blue-light': day == 1 }" class="cursor-pointer hover:bg-red-normal hover:text-blue-light text-center w-full py-2.5 px-3.5 border border-blue-normal transition-colors">
+            <span class="uppercase text-xl" x-bind:class="{ 'text-blue-light': day == 1, 'text-blue-normal': day != 1 }">Saturday</span><br>
+            <span class="uppercase text-sm" x-bind:class="{ 'text-blue-light': day == 1, 'text-blue-normal': day != 1 }">9 Aug, 2025</span>
+          </div>
+          <div x-on:click="day = 2" x-bind:class="{ 'bg-red-normal text-blue-light': day == 2 }" class="cursor-pointer hover:bg-red-normal hover:text-blue-light text-center w-full py-2.5 px-3.5 border border-blue-normal transition-colors">
+            <span class="uppercase text-xl" x-bind:class="{ 'text-blue-light': day == 2, 'text-blue-normal': day != 2 }">Sunday</span><br>
+            <span class="uppercase text-sm" x-bind:class="{ 'text-blue-light': day == 2, 'text-blue-normal': day != 2 }">10 Aug, 2025</span>
+          </div>
+        </div>
+        
+        <!-- Schedule Tables -->
+        <div x-show="day == 1">
+          {% include schedule.html day=1%}
+        </div>
+        <div x-show="day == 2">
+          {% include schedule.html day=2%}
+        </div>
       </div>
+      <section id="venue">
+        <div
+          class="mb-5 md:pl-16 pl-5 flex gap-2 md:hidden items-center"
+        >
+          <h2 class="md:text-3xl text-xl font-bold text-red-normal-active">
+            VENUE
+          </h2>
+          <div class="mb-3">{% include icons/decorateTitleMobile.svg %}</div>
+        </div>
+        <div class="relative">
+          <p
+            class="absolute top-4 md:left-10 left-5 md:text-2xl text-xl font-extrabold text-blue-light text-shadow-[3px_3px_6px_rgba(0,0,0,0.3)]"
+          >
+            National Taiwan University of<br />
+            Science and Technology<br />
+            台灣科技大學 活動中心 4 樓
+          </p>
+          <img
+            src="/assets/images/venueImage.jpg"
+            alt="venue"
+            class="w-full h-full object-cover"
+          />
+        </div>
+        <table class="border-collapse w-full">
+          <thead>
+            <tr class="*:py-3 bg-blue-normal">
+              <th
+                class="flex gap-2 items-center justify-center border border-white md:text-2xl text-xl text-blue-light"
+              >
+                <span> {% include icons/decorateTitleLeftIcon2.svg %} </span>
+                場地資訊 Venue Info
+                <span>{% include icons/decorateTitleRightIcon2.svg %}</span>
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr
+              class="*:py-3 md:*:pl-15 *:pl-5 text-lg bg-blue-light *:border *:border-white"
+            >
+              <td class="flex gap-2 items-start justify-between">
+                <p class="text-blue-dark font-extrabold whitespace-nowrap">
+                  地點
+                </p>
+                <p class="grow text-blue-normal md:text-xl text-base">
+                  台灣科技大學 活動中心 4 樓<br />
+                  National Taiwan University of Science and Technology
+                </p>
+              </td>
+              <td class="flex gap-2 items-start justify-between">
+                <p class="text-blue-dark font-extrabold whitespace-nowrap">
+                  地址
+                </p>
+                <p class="grow text-blue-normal md:text-xl text-base">
+                  106台北市大安區基隆路四段43號<br />
+                  No. 43, Sec. 4, Keelung Rd., Da'an Dist., Taipei City 106335,
+                  Taiwan (R.O.C.)
+                </p>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <iframe
+          width="100%"
+          height="400"
+          frameborder="0"
+          style="border: 0"
+          referrerpolicy="no-referrer-when-downgrade"
+          src="https://www.google.com/maps/embed/v1/place?key=AIzaSyCno9j7YCsQoeRLGJLFQLZmLftf-m5KqXE&q=National+Taiwan+University+of+Science+and+Technology,Taipei+Taiwan"
+          allowfullscreen
+        >
+        </iframe>
+      </section>
+      <section id="party">
+        <div
+          class="mb-5 md:pl-16 pl-5 flex gap-2 md:hidden items-center"
+        >
+          <h2 class="md:text-3xl text-xl font-bold text-red-normal-active">
+            PARTY
+          </h2>
+          <div class="mb-3">{% include icons/decorateTitleMobile.svg %}</div>
+        </div>
+        <img
+          src="/assets/images/codeparty-tw-2025.jpg"
+          alt="party"
+          class="w-full h-full object-cover"
+        />
+        <table class="border-collapse w-full">
+          <thead>
+            <tr class="*:py-3 bg-blue-normal">
+              <th
+                class="flex gap-2 items-center justify-center border border-white md:text-2xl text-xl text-blue-light"
+              >
+                <span> {% include icons/decorateTitleLeftIcon2.svg %} </span>
+                Event Info
+                <span>{% include icons/decorateTitleRightIcon2.svg %}</span>
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr
+              class="*:py-3 md:*:pl-15 *:pl-5 text-lg bg-blue-light *:border *:border-white"
+            >
+              <td class="flex gap-2 items-start justify-between">
+                <p class="text-blue-dark font-extrabold whitespace-nowrap">
+                  Schedule
+                </p>
+                <p class="grow text-blue-normal md:text-xl text-base">
+                  8/9（Sat）18:30~21:30
+                </p>
+              </td>
+              <td class="flex gap-2 items-start justify-between">
+                <p class="text-blue-dark font-extrabold whitespace-nowrap">
+                  Location
+                </p>
+                <p class="grow text-blue-normal md:text-xl text-base">
+                  PicCollage Office（3F, No. 102, Guangfu S. Road, Daan Dist., Taipei）
+                </p>
+              </td>
+              <td class="flex gap-2 items-start justify-between">
+                <p class="text-blue-dark font-extrabold whitespace-nowrap">
+                  Registration
+                </p>
+                <p class="grow text-blue-normal md:text-xl text-base">
+                  Please <a href="https://rubytaiwan.kktix.cc/events/codeparty2025" target="_blank">Register Here</a> to Join the Code Party.
+                </p>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+      <section id="coscup">
+        <div
+          class="mb-5 md:pl-16 pl-5 flex gap-2 md:hidden items-center"
+        >
+          <h2 class="md:text-3xl text-xl font-bold text-red-normal-active">
+            COSCUP
+          </h2>
+          <div class="mb-3">{% include icons/decorateTitleMobile.svg %}</div>
+        </div>
+        <div
+          class="relative w-full h-fit flex justify-center items-center overflow-hidden"
+        >
+          <a
+            href="https://coscup.org/2025"
+            target="_blank"
+            class="absolute flex flex-row justify-center items-center text-blue-light md:text-xl text-base font-bold px-12 md:py-2.5 py-1.5 gap-2.5 left-1/2 -translate-x-1/2 top-[60%] bg-green-normal hover:bg-green-normal-active border border-green-light rounded-full"
+            >Visit</a
+          >
+          <span class="object-cover w-screen md:w-full md:shrink-0">
+            {% include images/coscupBg.svg %}
+          </span>
+        </div>
+      </section>
     </div>
   </div>
-</section>
+  {% include speaker_modals.html %}
+</div>

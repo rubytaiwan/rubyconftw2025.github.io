@@ -1,0 +1,172 @@
+<footer
+  x-data="{ modal_id: 0 }"
+  x-cloak
+  class="relative bg-gray-900 text-blue-light py-8"
+>
+  <div class="container mx-auto px-4 space-y-4">
+    <div
+      class="flex justify-center space-x-8 mb-6 border-b border-blue-light text-blue-light font-bold pb-6"
+    >
+      <button
+        @click="modal_id=1"
+        class="text-blue-light hover:text-blue-light-active cursor-pointer"
+      >
+        {{ site.data.footer.coc.title }}
+      </button>
+
+      <button
+        @click="modal_id=2"
+        class="text-blue-light hover:text-blue-light-active cursor-pointer"
+      >
+        {{ site.data.footer.team_member.title }}
+      </button>
+      <a
+        href="{{ site.data.footer.rubytw.href}}"
+        target="_blank"
+        class="text-blue-light hover:text-blue-light-active"
+        >{{ site.data.footer.rubytw.title }}</a
+      >
+    </div>
+    <div class="flex justify-center space-x-4">
+      {% for social in site.data.footer.social_links %}
+      <a href="{{ social.href }}" target="_blank">
+        <div class="w-7 h-7 text-blue-light">
+          {% include icons/{{ social.icon }}.svg %}
+        </div>
+      </a>
+      {% endfor %}
+    </div>
+    <div class="font-light text-xs text-center text-blue-light">
+      {{ site.data.footer.title }}
+    </div>
+  </div>
+  <!-- code of conduct modal -->
+  <div
+    x-show="modal_id == 1"
+    aria-labelledby="modal-title"
+    role="dialog"
+    aria-modal="true"
+  >
+    <div class="z-50 fixed inset-0 w-full h-full pt-24 transition-opacity">
+      <div
+        @click="modal_id=0"
+        class="absolute top-0 w-full h-full bg-black/50"
+      ></div>
+      <div
+        class="absolute left-1/2 -translate-x-1/2 overflow-y-auto top-1/2 -translate-y-1/2 rounded-xl p-4 md:p-8 pr-6 w-[90vw] md:w-[60rem] max-h-[70vh] md:max-h-[80vh] bg-white text-left shadow-xl transition-all [&::-webkit-scrollbar]:w-2 [&::-webkit-scrollbar]:pr-1 [&::-webkit-scrollbar-track]:rounded-r-xl [&::-webkit-scrollbar-track]:bg-gray-100 [&::-webkit-scrollbar-thumb]:rounded-xl [&::-webkit-scrollbar-thumb]:bg-gray-300"
+      >
+        <div class="relative w-full p-4 bg-white">
+          <div class="flex flex-col items-center">
+            <h3 class="text-3xl text-center font-bold text-red-normal">
+              {{ site.data.footer.coc.title }}
+            </h3>
+            <div class="mt-4 text-green-normal space-y-4">
+              {% capture coc_content %}{% include posts/coc.md %}{% endcapture %}
+              {{ coc_content | markdownify }}
+            </div>
+            <button
+              @click="modal_id=0"
+              class="mx-auto mt-4 border rounded px-3 py-2 text-lg bg-green-normal text-blue-light hover:bg-green-normal-active cursor-pointer"
+            >
+              CLOSE
+            </button>
+          </div>
+          <button
+            @click="modal_id=0"
+            class="absolute right-4 top-4 text-2xl cursor-pointer text-green-normal hover:text-green-normal-active"
+          >
+            {% include icons/xMark.svg %}
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- team member modal -->
+  <div
+    x-show="modal_id == 2"
+    aria-labelledby="modal-title"
+    role="dialog"
+    aria-modal="true"
+  >
+    <div class="z-50 fixed inset-0 w-full h-full pt-24 transition-opacity">
+      <div
+        @click="modal_id=0"
+        class="absolute top-0 w-full h-full bg-black/50"
+      ></div>
+      <div
+        class="absolute left-1/2 -translate-x-1/2 overflow-y-auto top-1/2 -translate-y-1/2 rounded-xl p-4 md:p-8 pr-6 w-[90vw] md:w-[60rem] max-h-[70vh] md:max-h-[80vh] bg-white text-left shadow-xl transition-all [&::-webkit-scrollbar]:w-2 [&::-webkit-scrollbar]:pr-1 [&::-webkit-scrollbar-track]:rounded-r-xl [&::-webkit-scrollbar-track]:bg-gray-100 [&::-webkit-scrollbar-thumb]:rounded-xl [&::-webkit-scrollbar-thumb]:bg-gray-300"
+      >
+        <div class="relative w-full p-4 bg-white">
+          <div
+            class="grid grid-cols-1 md:grid-cols-3 gap-x-4 gap-y-6 justify-center items-center text-center"
+          >
+            {% for staff in site.data.footer.staffs %}
+            <div class="flex flex-col items-center gap-4">
+              <div class="w-45 h-45 border rounded-full relative">
+                <div
+                  class="absolute inset-1 rounded-full border border-white z-10"
+                ></div>
+                <img
+                  class="w-full h-full object-cover rounded-full relative"
+                  src="{{staff.avatar}}"
+                  alt="{{staff.name}}"
+                />
+              </div>
+              <h4 class="text-lg text-blue-normal font-bold"
+                >{{staff.name}}</h4
+              >
+              {% if staff.title %}
+              <h5 class="text-base text-blue-normal font-bold">{{staff.title}}</h5>
+              {% endif %}
+              <div class="flex gap-x-2">
+                {% if staff.github_id %}
+                <a
+                  href="https://github.com/{{staff.github_id}}"
+                  target="_blank"
+                  class="text-blue-normal w-7 h-7"
+                >
+                  {% include icons/github.svg %}
+                </a>
+                {% endif %}
+                {% if staff.x_id %}
+                <a
+                  href="https://x.com/{{staff.x_id}}"
+                  target="_blank"
+                  class="text-blue-normal w-7 h-7"
+                >
+                  {% include icons/twitter.svg %}
+                </a>
+                {% endif %}
+                {% if staff.facebook %}
+                <a
+                  href="{{staff.facebook}}"
+                  target="_blank"
+                  class="text-blue-normal w-7 h-7"
+                >
+                  {% include icons/facebook.svg %}
+                </a>
+                {% endif %}
+                {% if staff.ig_id %}
+                <a
+                  href="https://www.instagram.com/{{staff.ig_id}}"
+                  target="_blank"
+                  class="text-blue-normal w-7 h-7"
+                >
+                  {% include icons/instagram.svg %}
+                </a>
+                {% endif %}
+              </div>
+            </div>
+            {% endfor %}
+          </div>
+          <button
+            @click="modal_id=0"
+            class="absolute right-4 top-4 text-2xl cursor-pointer text-green-normal hover:text-green-normal-active"
+          >
+            {% include icons/xMark.svg %}
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>

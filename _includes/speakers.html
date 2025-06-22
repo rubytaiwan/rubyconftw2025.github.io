@@ -1,0 +1,54 @@
+<section
+  id="speakers"
+>
+  <div class="mb-5 md:pl-16 pl-5 flex gap-2 md:hidden items-center">
+    <h2 class="md:text-3xl text-xl font-bold text-red-normal-active">
+      SPEAKERS
+    </h2>
+    <div class="mb-3">{% include icons/decorateTitleMobile.svg %}</div>
+  </div>
+  <div
+    class="px-5 md:px-0 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 justify-items-center items-center gap-4"
+  >
+    {% for schedule in site.data.schedule | where: "type", "session" %}
+    {% if schedule.speaker_name and schedule.speaker_name != "" %}
+    <!-- speaker avatar -->
+    <div
+      @click="open_id = '{{ schedule.speaker_id }}'"
+      class="group flex flex-col gap-y-4 justify-center items-center hover:-translate-y-4 duration-300 cursor-pointer w-full max-w-sm"
+    >
+      <div class="w-40 h-40 lg:w-45 lg:h-45 border rounded-full relative">
+        <div
+          class="absolute inset-1 rounded-full border border-white z-10"
+        ></div>
+        {% if schedule.speaker_avatar and schedule.speaker_avatar != "" %}
+        <img
+          class="w-full h-full object-cover group-hover:opacity-80 duration-300 rounded-full shrink-0"
+          src="/assets/images/{{ schedule.speaker_avatar }}"
+          alt="{{ schedule.speaker_name }}"
+        />
+        {% else %}
+        <div class="w-full h-full bg-gray-300 rounded-full flex items-center justify-center">
+          <span class="text-gray-500 text-2xl font-bold">
+            {{ schedule.speaker_name | slice: 0 }}
+          </span>
+        </div>
+        {% endif %}
+      </div>
+      <p
+        class="text-center text-green-normal group-hover:text-green-normal-active duration-300 font-bold text-sm md:text-base truncate w-full px-2"
+      >
+        {{ schedule.speaker_name }}
+      </p>
+      <div
+        class="flex gap-2 items-center justify-center text-xs md:text-sm text-green-normal group-hover:text-green-normal-active duration-300 truncate w-full px-2"
+      >
+        {% if schedule.speaker_bio and schedule.speaker_bio != "" %}
+        <span>{{ schedule.speaker_bio }}</span>
+        {% endif %}
+      </div>
+    </div>
+    {% endif %}
+    {% endfor %}
+  </div>
+</section>

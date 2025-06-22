@@ -1,0 +1,124 @@
+<section id="day-{{ include.day }}-schedule">
+  <div
+    class="mb-5 md:pl-16 pl-5 flex gap-2 md:hidden items-center"
+  >
+    <h2 class="md:text-3xl text-xl font-bold text-red-normal-active">
+      SCHEDULE
+    </h2>
+    <div class="mb-3">{% include icons/decorateTitleMobile.svg %}</div>
+  </div>
+
+  <table class="border-collapse w-full">
+    <thead
+      class="hidden md:table-header-group bg-blue-normal text-blue-light text-2xl"
+    >
+      <tr class="*:py-3 *:border *:border-blue-light">
+        <th width="30%">Time</th>
+        <th width="70%">Schedule</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% assign schedules = site.data.schedule | where: "day", include.day %}
+      {% for schedule in schedules %}
+      <tr
+        class="md:*:py-5 *:border md:*:border-t *:border-t-0 first:*:border-t-1 *:border-white {% if schedule.type != 'break' %} bg-blue-light {% endif %}"
+      >
+        <td
+          class="hidden md:table-cell text-center text-2xl font-bold text-blue-normal"
+        >
+          {{ schedule.start_time }}
+        </td>
+        <td
+          class="*:py-5 md:*:py-0 flex flex-col flex-1 gap-3 items-center md:divide-y-0 divide-y-1 divide-blue-light"
+        >
+          <div class="flex gap-2 justify-center items-center w-full">
+            {% if schedule.type == 'break' %}
+            <span class="w-fit h-fit">
+              {% include icons/decorateTitleLeftIcon.svg %}
+            </span>
+            {% endif %}
+            <p class="session-subject flex gap-2 text-blue-normal md:text-2xl text-xl font-extrabold px-2 text-center">
+              <span> 
+                {% if schedule.type == 'session' %}
+                  {{ schedule.subject }} （{{ schedule.track }}）
+                {% else %}
+                  {{ schedule.subject }}
+                {% endif %}
+              </span>
+            </p>
+            {% if schedule.type == 'break' %}
+            <span class="w-fit h-fit">
+              {% include icons/decorateTitleRightIcon.svg %}
+            </span>
+            {% endif %}
+          </div>
+          
+          {% if schedule.type == 'session' %}
+          <div
+            class="md:mt-4 space-y-6 flex flex-col items-center w-full"
+          >
+            <div class="md:hidden flex gap-2 items-center justify-center">
+              <p
+                class="text-blue-normal md:text-2xl text-xl font-extrabold"
+              >
+                Place
+              </p>
+            </div>
+            <!-- speaker avatar -->
+            <div
+              @click="open_id = '{{ schedule.speaker_id }}'"
+              class="px-4 group grow flex lg:flex-row flex-col gap-2 items-center justify-center space-y-2 hover:-translate-y-4 duration-300 cursor-pointer w-full max-w-lg"
+            >
+              <div
+                class="md:w-45 md:h-45 w-40 h-40 border rounded-full relative shrink-0"
+              >
+                <div
+                  class="absolute inset-1 rounded-full border border-white z-10"
+                ></div>
+                <img
+                  class="w-full h-full object-cover group-hover:opacity-80 duration-300 rounded-full relative shrink-0"
+                  src="/assets/images/{{ schedule.speaker_avatar }}"
+                  alt="{{ schedule.speaker_name }}"
+                />
+              </div>
+              <div class="grow hidden lg:block w-full min-w-0">
+                <div
+                  class="flex gap-2 items-center text-xs text-green-normal"
+                >
+                  <div
+                    class="px-3 py-1 text-xs text-green-normal bg-green-light border border-green-normal rounded-lg w-fit"
+                  >
+                    {{ schedule.lang }}
+                  </div>
+                  <p>{{ schedule.subject }}</p>
+                </div>
+                <div
+                  class="flex lg:flex-row flex-col gap-2 items-center text-xs text-center w-full text-green-normal divide-x divide-green-normal"
+                >
+                  <p class="pr-2 truncate">{{ schedule.speaker_name }}</p>
+                </div>
+              </div>
+              <p
+                class="lg:hidden text-center text-green-normal group-hover:text-green-normal-active duration-300 font-bold text-sm md:text-base truncate w-full px-2"
+              >
+                {{ schedule.speaker_name }}
+              </p>
+              <div
+                class="lg:hidden flex gap-2 items-center text-xs md:text-sm text-green-normal group-hover:text-green-normal-active duration-300"
+              >
+                <p>{{ schedule.speaker_bio }}</p>
+                <div
+                  class="px-3 py-1 text-xs text-green-normal group-hover:text-green-normal-active duration-300 bg-green-light hover:bg-green-light-active border border-green-normal rounded-md w-fit"
+                >
+                  {{ schedule.lang }}
+                </div>
+              </div>
+            </div>
+          </div>
+          {% endif %}
+        </td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+</section>
