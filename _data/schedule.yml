@@ -278,7 +278,7 @@
   speaker_name: OKURA Masafumi
   speaker_github: okuramasafumi
   speaker_x: okuramasafumi
-  speaker_bio: Chief organizer of #kaigionrails
+  speaker_bio: "Chief organizer of KaigiOnRails"
   subject: 'Why doesn''t Ruby have Boolean class?'
   abstract: "Ruby is a fully object-oriented language. While other OO languages such as Java have a `Boolean` class, Ruby doesn't have it. It doesn't have methods like `to_bool`. So, is it bad for Ruby programmers? No, we feel comfortable without `Boolean` class or `to_bool` method.\nThis leads to questions: What is Boolean, what is class and how Ruby designs it? And finally, why doesn't Ruby have Boolean class?\nThis talk answers \"Why doesn't Ruby have Boolean class?\" question and explores the world of OOP and language design."
 - session_id: s10
