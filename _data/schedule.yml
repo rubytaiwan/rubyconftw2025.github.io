@@ -5,7 +5,7 @@
   duration: "0:25"
   day: 1
   track: RB105
-  lang: en
+  lang: EN
   speaker_id: D11C51
   speaker_avatar: tbd.svg
   speaker_name: TBD
@@ -21,7 +21,7 @@
   duration: "0:45"
   day: 1
   track: RB105
-  lang: en
+  lang: EN
   speaker_id: C9493B
   speaker_avatar: matz.jpg
   speaker_name: MATSUMOTO Yukihiro (Matz) 
@@ -46,7 +46,7 @@
   duration: "0:30"
   day: 1
   track: RB105
-  lang: en
+  lang: EN
   speaker_id: YTJHQ7
   speaker_avatar: segiddins.jpg
   speaker_name: Samuel Giddins
@@ -62,7 +62,7 @@
   duration: "0:30"
   day: 1
   track: TR209
-  lang: en
+  lang: EN
   speaker_id: WVCWXV
   speaker_avatar: KuokkanenSampo.jpg
   speaker_name: Sampo Kuokkanen
@@ -92,7 +92,7 @@
   duration: "0:30"
   day: 1
   track: TR209
-  lang: en
+  lang: EN
   speaker_id: AFH9W3
   speaker_avatar: hasumikin.jpg
   speaker_name: Hitoshi HASUMI
@@ -122,7 +122,7 @@
   duration: "0:30"
   day: 1
   track: TR209
-  lang: en
+  lang: EN
   speaker_id: TD3ZDW
   speaker_avatar: crplanas.jpg
   speaker_name: Cristian Planas
@@ -152,7 +152,7 @@
   duration: "0:30"
   day: 1
   track: TR209
-  lang: en
+  lang: EN
   speaker_id: KLEUNM
   speaker_avatar: s01.jpg
   speaker_name: Ryo Kajiwara
@@ -182,7 +182,7 @@
   duration: "0:30"
   day: 1
   track: TR209
-  lang: en
+  lang: EN
   speaker_id: K793LW
   speaker_avatar: kaz0505.jpg
   speaker_name: Kazuaki TANAKA
@@ -212,7 +212,7 @@
   duration: "0:30"
   day: 1
   track: TR209
-  lang: en
+  lang: EN
   speaker_id: AP8HCA
   speaker_avatar: hachiblog.jpg
   speaker_name: Hayao Kimura
@@ -242,7 +242,7 @@
   duration: "0:30"
   day: 1
   track: TR209
-  lang: en
+  lang: EN
   speaker_id: 8W8G3J
   speaker_avatar: spikeolaf.jpg
   speaker_name: Yuichiro Kaneko
@@ -272,7 +272,7 @@
   duration: "0:30"
   day: 1
   track: TR209
-  lang: en
+  lang: EN
   speaker_id: MDMME3
   speaker_avatar: okuramasafumi.jpg
   speaker_name: OKURA Masafumi
@@ -330,7 +330,7 @@
   duration: "0:30"
   day: 2
   track: TR209
-  lang: en
+  lang: EN
   speaker_id: QWF9SF
   speaker_avatar: ioquatix.jpg
   speaker_name: Samuel Williams
@@ -360,7 +360,7 @@
   duration: "0:30"
   day: 2
   track: TR209
-  lang: en
+  lang: EN
   speaker_id: J7KBSL
   speaker_avatar: skyksandr.jpg
   speaker_name: Aleksandr Kunin
@@ -390,7 +390,7 @@
   duration: "0:30"
   day: 2
   track: TR209
-  lang: en
+  lang: EN
   speaker_id: KXGSTL
   speaker_avatar: yatish.jpg
   speaker_name: Yatish Mehta
@@ -420,7 +420,7 @@
   duration: "0:30"
   day: 2
   track: TR209
-  lang: en
+  lang: EN
   speaker_id: KVTZHB
   speaker_avatar: ydah_.jpg
   speaker_name: Yudai Takada
@@ -481,7 +481,7 @@
   duration: "0:30"
   day: 2
   track: TR209
-  lang: en
+  lang: EN
   speaker_id: KRTWYM
   speaker_avatar: Envek.jpg
   speaker_name: Andrey Novikov
