@@ -93,11 +93,11 @@ layout: default
       <div id="schedule" x-data="{ day: 1 }">
         <!-- Day Selector -->
         <div class="grid md:grid-cols-2 items-center justify-items-center bg-blue-light text-blue-normal font-bold text-base mb-6">
-          <div x-on:click="day = 1" x-bind:class="{ 'bg-red-normal text-blue-light': day == 1 }" class="cursor-pointer hover:bg-red-normal hover:text-blue-light text-center w-full py-2.5 px-3.5 border border-blue-normal transition-colors">
+          <div x-on:click="day = 1" x-bind:class="{ 'bg-red-normal-active text-blue-light': day == 1 }" class="cursor-pointer hover:bg-red-normal-hover hover:text-blue-light text-center w-full py-2.5 px-3.5 border border-blue-normal transition-colors">
             <span class="uppercase text-xl" x-bind:class="{ 'text-blue-light': day == 1, 'text-blue-normal': day != 1 }">Saturday</span><br>
             <span class="uppercase text-sm" x-bind:class="{ 'text-blue-light': day == 1, 'text-blue-normal': day != 1 }">9 Aug, 2025</span>
           </div>
-          <div x-on:click="day = 2" x-bind:class="{ 'bg-red-normal text-blue-light': day == 2 }" class="cursor-pointer hover:bg-red-normal hover:text-blue-light text-center w-full py-2.5 px-3.5 border border-blue-normal transition-colors">
+          <div x-on:click="day = 2" x-bind:class="{ 'bg-red-normal-active text-blue-light': day == 2 }" class="cursor-pointer hover:bg-red-normal-hover hover:text-blue-light text-center w-full py-2.5 px-3.5 border border-blue-normal transition-colors">
             <span class="uppercase text-xl" x-bind:class="{ 'text-blue-light': day == 2, 'text-blue-normal': day != 2 }">Sunday</span><br>
             <span class="uppercase text-sm" x-bind:class="{ 'text-blue-light': day == 2, 'text-blue-normal': day != 2 }">10 Aug, 2025</span>
           </div>

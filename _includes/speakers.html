@@ -44,7 +44,7 @@
         class="flex gap-2 items-center justify-center text-xs md:text-sm text-green-normal group-hover:text-green-normal-active duration-300 truncate w-full px-2"
       >
         {% if schedule.speaker_bio and schedule.speaker_bio != "" %}
-        <span>{{ schedule.speaker_bio }}</span>
+        <span class="truncate">{{ schedule.speaker_bio }}</span>
         {% endif %}
       </div>
     </div>
