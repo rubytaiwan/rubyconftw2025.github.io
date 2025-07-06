@@ -155,6 +155,24 @@
                   {% include icons/instagram.svg %}
                 </a>
                 {% endif %}
+                {% if staff.linkedin_id %}
+                <a
+                  href="https://www.linkedin.com/in/{{staff.linkedin_id}}"
+                  target="_blank"
+                  class="text-blue-normal w-7 h-7"
+                >
+                  {% include icons/linkedin.svg %}
+                </a>
+                {% endif %}
+                {% if staff.youtube_url %}
+                <a
+                  href="{{ staff.youtube_url }}"
+                  target="_blank"
+                  class="text-blue-normal w-7 h-7"
+                >
+                  {% include icons/youtube.svg %}
+                </a>
+                {% endif %}
               </div>
             </div>
             {% endfor %}
