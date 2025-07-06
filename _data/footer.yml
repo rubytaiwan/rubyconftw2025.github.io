@@ -29,6 +29,10 @@ staffs:
     facebook: https://www.facebook.com/ryudoawaru
     ig_id: ryudoawaru
     github_id: ryudoawaru
+  - name: Otani Kazumi
+    title: Emcee
+    avatar: /assets/images/kzmotn.jpg
+    linkedin_id: kzmotn
   - name: Xillinna
     title: Main Designer
     avatar: /assets/images/Xillinna.jpg
@@ -44,8 +48,10 @@ staffs:
     x_id: k_hno3
   - name: Yu-Chi Wei
     title: Staff
-    avatar: /assets/images/snowmint.jpg
+    avatar: /assets/images/snowmint_channel.jpg
     github_id: snowmint
+    ig_id: utakawa_shihori
+    youtube_url: 'https://www.youtube.com/@utakawa_shihori'
   - name: Cheng-Chin Chiang
     title: Website Frontend Engineer
     avatar: /assets/images/cheng-chin.jpg
