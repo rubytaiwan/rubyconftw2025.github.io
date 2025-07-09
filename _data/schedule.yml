@@ -128,7 +128,7 @@
   speaker_name: Cristian Planas
   speaker_github: Gawyn
   speaker_x: crplanas
-  speaker_bio: Senior Staff Engineer at Zendesk
+  speaker_bio: Engineer at Combinaut
   subject: Rails Scales! - Why startups fail and how you can succeed
   abstract: "Many engineers hold the belief that Rails does not scale. Indeed, many startups have problems scaling their Rails application. At the same time, massive companies like Shopify or Zendesk run Rails monoliths at a planetary scale. How do they do it?\n\nIn this presentation, Cristian Planas, former start-up founder/CTO and Group Tech Lead for performance at Zendesk will share with you what these companies know that you don't. He will introduce you to the scalability problems that he had in his start-up, how he failed at solving them, and what are the actual options to fix them."
 - session_id: b4
