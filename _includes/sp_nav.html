@@ -48,6 +48,13 @@
           SCHEDULE
         </a>
         <a
+          href="#sponsors"
+          @click.prevent="scrollToSection('sponsors')"
+          class="-mx-3 block px-3 py-2 font-semibold leading-7 text-white hover:text-red-light transition-colors"
+        >
+          PARTNERS
+        </a>
+        <a
           href="#venue"
           @click.prevent="scrollToSection('venue')"
           class="-mx-3 block px-3 py-2 font-semibold leading-7 text-white hover:text-red-light transition-colors"
@@ -101,6 +108,12 @@
       class="nav-link transition-colors cursor-pointer text-red-light-active hover:text-red-light-hover"
       @click.prevent="scrollToSection('schedule')"
       >SCHEDULE</a
+    >
+    <a
+      href="#sponsors"
+      class="nav-link transition-colors cursor-pointer text-red-light-active hover:text-red-light-hover"
+      @click.prevent="scrollToSection('sponsors')"
+      >PARTNERS</a
     >
     <a
       href="#venue"
