@@ -20,6 +20,13 @@
       >SCHEDULE</a
     >
     <a
+      href="#sponsors"
+      class="nav-link transition-colors cursor-pointer"
+      :class="activeSection === 'sponsors' ? 'text-red-active' : 'text-red-light hover:text-red-light-active'"
+      @click.prevent="scrollToSection('sponsors')"
+      >PARTNERS</a
+    >
+    <a
       href="#venue"
       class="nav-link transition-colors cursor-pointer"
       :class="activeSection === 'venue' ? 'text-red-active' : 'text-red-light hover:text-red-light-active'"
