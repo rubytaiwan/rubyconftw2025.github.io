@@ -1,0 +1,16 @@
+- type: speaker
+  url: https://www.combinaut.com
+  name: Combinaut
+  logo: Combinaut.png
+- type: speaker
+  url: https://evilmartians.com
+  name: Evil Martians
+  logo: evilmartians.svg
+- type: special
+  url: https://www.city.matsue.lg.jp/sangyo_business/sangyoshinko/RubyCityMATSUE/index.html
+  name: RubyCityMATSUE
+  logo: matsue.png
+- type: special
+  url: https://piccollage.com
+  name: Piccollage
+  logo: piccollage.png

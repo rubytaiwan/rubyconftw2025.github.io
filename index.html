@@ -43,7 +43,7 @@ layout: default
     },
     
     updateActiveSection() {
-      const sections = ['top', 'speakers', 'schedule', 'venue', 'party', 'coscup'];
+      const sections = ['top', 'speakers', 'schedule', 'sponsors', 'venue', 'party', 'coscup'];
       const scrollPos = window.scrollY;
       const windowHeight = window.innerHeight;
       const documentHeight = document.body.scrollHeight;
@@ -111,6 +111,7 @@ layout: default
           {% include schedule.html day=2%}
         </div>
       </div>
+      {% include sponsors.html %}
       <section id="venue">
         <div
           class="mb-5 md:pl-16 pl-5 flex gap-2 md:hidden items-center"
