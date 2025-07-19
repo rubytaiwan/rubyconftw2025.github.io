@@ -312,8 +312,8 @@
 - session_id: b9
   type: break
   start_time: "10:30"
-  end_time: "10:35"
-  duration: "0:05"
+  end_time: "10:40"
+  duration: "0:15"
   day: 2
   track: TR209
   lang: 
@@ -325,8 +325,8 @@
   abstract: 
 - session_id: s11
   type: session
-  start_time: "10:35"
-  end_time: "11:05"
+  start_time: "10:40"
+  end_time: "11:10"
   duration: "0:30"
   day: 2
   track: TR209
@@ -341,9 +341,9 @@
   abstract: "Ruby is beloved for its developer experience, but it's not always known for raw performance or scalability. With Falcon and Async, we're changing that.\n\nIn this talk, I'll walk you through building modern, concurrent Ruby web applications using Falcon — a high-performance async web server — and Async, the foundation for non-blocking I/O in Ruby. We'll cover the full lifecycle of a production-ready app:\n\n- **Building**: Writing non-blocking, fiber-based web apps using Async and Protocol::HTTP.\n- **Deploying**: Running Falcon in production environments, from containers to the cloud.\n- **Monitoring**: Observability strategies for async systems — logging, metrics, and tracing.\n\nWhether you're serving APIs, streaming data, or scaling real-time features, this talk will equip you with practical tools and patterns to confidently run async Ruby apps in production."
 - session_id: b10
   type: break
-  start_time: "11:05"
-  end_time: "11:10"
-  duration: "0:05"
+  start_time: "11:10"
+  end_time: "11:20"
+  duration: "0:10"
   day: 2
   track: TR209
   lang: 
@@ -355,8 +355,8 @@
   abstract: 
 - session_id: s12
   type: session
-  start_time: "11:10"
-  end_time: "11:40"
+  start_time: "11:20"
+  end_time: "11:50"
   duration: "0:30"
   day: 2
   track: TR209
@@ -369,41 +369,11 @@
   speaker_bio: "NexHealth.com : Backend Engineer"
   subject: "Loosing Seat in Concurrency: A tale of Transactions and Locks"
   abstract: "Let's say there is one seat left in the aircraft. And two people want to buy a ticket. And they submit a form at the almost same time. Who gets the seat?\nIn this talk I'll touch classic database concurrency problems, transaction isolation and anomalies, pessimistic, optimistic and advisory locking and patterns to use it."
-- session_id: b11
-  type: break
-  start_time: "11:40"
-  end_time: "11:45"
-  duration: "0:05"
-  day: 2
-  track: TR209
-  lang: 
-  speaker_id: 
-  speaker_avatar: 
-  speaker_name: 
-  speaker_bio: 
-  subject: Break
-  abstract: 
-- session_id: s13
-  type: session
-  start_time: "11:45"
-  end_time: "12:15"
-  duration: "0:30"
-  day: 2
-  track: TR209
-  lang: EN
-  speaker_id: KXGSTL
-  speaker_avatar: yatish.jpg
-  speaker_name: Yatish Mehta
-  speaker_github: yatish27
-  speaker_x: yatish_me
-  speaker_bio: Staff Software Engineer, Asana
-  subject: No "Pundit" Intended
-  abstract: Has your has_access? method morphed from a straightforward guard into a tangled mess? While most Rails applications rely on Pundit, truly complex systems demand a more robust approach. In this talk, we'll dive into implementing a tuple-based authorization model—an approach leveraged by Google and other large-scale applications—right within Rails. Learn how to tackle intricate permission scenarios without migrating to an external authorization system.
 - session_id: b12
   type: break
-  start_time: "12:15"
+  start_time: "11:50"
   end_time: "13:30"
-  duration: "1:15"
+  duration: "1:50"
   day: 2
   track: TR209
   lang: 
