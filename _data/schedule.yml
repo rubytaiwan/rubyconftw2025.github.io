@@ -28,8 +28,8 @@
   speaker_github: matz
   speaker_x: yukihiro_matz
   speaker_bio: Creator of Ruby, Heroku
-  subject: TBD
-  abstract: TBD
+  subject: Programming Language for AI age
+  abstract: What is the best language for AI age? (You can guess from the name of the presenter). What is characteristics of programming language for AI age?
 - session_id: b1
   type: break
   start_time: "10:20"
