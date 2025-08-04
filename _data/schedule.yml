@@ -7,13 +7,13 @@
   track: RB105
   lang: EN
   speaker_id: D11C51
-  speaker_avatar: tbd.svg
-  speaker_name: TBD
+  speaker_avatar: akihito_uesada.jpg
+  speaker_name: Akihito Uesada
   speaker_github: 
-  speaker_x: 
-  speaker_bio: 
-  subject: Opening
-  abstract: TBD
+  speaker_x: akihito_uesada
+  speaker_bio: Mayor of RubyCity MATSUE, Shimane Perfecture
+  subject: Shaping Dreams with Digital Power— MATSUE City (Opening Ceremony)
+  abstract: Introduce The Opensource history & culture of RubyCity MATSUE.
 - session_id: prime
   type: session
   start_time: "9:35"
