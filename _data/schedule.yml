@@ -7,6 +7,7 @@
   track: RB105
   lang: EN
   speaker_id: D11C51
+  video_id: UJUOhyMEb8c
   speaker_avatar: akihito_uesada.jpg
   speaker_name: Akihito Uesada
   speaker_github: 
@@ -22,6 +23,7 @@
   day: 1
   track: RB105
   lang: EN
+  video_id: dXoo5MtUVvk
   speaker_id: C9493B
   speaker_avatar: matz.jpg
   speaker_name: MATSUMOTO Yukihiro (Matz) 
@@ -47,6 +49,7 @@
   day: 1
   track: RB105
   lang: EN
+  video_id: V8O1CbGpDfI
   speaker_id: YTJHQ7
   speaker_avatar: segiddins.jpg
   speaker_name: Samuel Giddins
@@ -63,6 +66,7 @@
   day: 1
   track: TR209
   lang: EN
+  video_id: _WGueO88v3o
   speaker_id: WVCWXV
   speaker_avatar: KuokkanenSampo.jpg
   speaker_name: Sampo Kuokkanen
@@ -93,6 +97,7 @@
   day: 1
   track: TR209
   lang: EN
+  video_id: AI6unRJNZ8c
   speaker_id: AFH9W3
   speaker_avatar: hasumikin.jpg
   speaker_name: Hitoshi HASUMI
@@ -123,6 +128,7 @@
   day: 1
   track: TR209
   lang: EN
+  video_id: -fYhI7qM8yY
   speaker_id: TD3ZDW
   speaker_avatar: crplanas.jpg
   speaker_name: Cristian Planas
@@ -153,6 +159,7 @@
   day: 1
   track: TR209
   lang: EN
+  video_id: 3RwPybQOSEg
   speaker_id: KLEUNM
   speaker_avatar: s01.jpg
   speaker_name: Ryo Kajiwara
@@ -183,6 +190,7 @@
   day: 1
   track: TR209
   lang: EN
+  video_id: BQDLzYVyHbA
   speaker_id: K793LW
   speaker_avatar: kaz0505.jpg
   speaker_name: Kazuaki TANAKA
@@ -289,6 +297,7 @@
   day: 2
   track: TR209
   lang: cht
+  video_id: ObpSO4_-n9Y
   speaker_id: TY3ELY
   speaker_avatar: EtrexKuo.jpg
   speaker_name: 卡米哥 / Etrex Kuo
@@ -331,6 +340,7 @@
   day: 2
   track: TR209
   lang: EN
+  video_id: CqbBoA7BE3A
   speaker_id: QWF9SF
   speaker_avatar: ioquatix.jpg
   speaker_name: Samuel Williams
@@ -361,6 +371,7 @@
   day: 2
   track: TR209
   lang: EN
+  video_id: 8h89q2rym1U
   speaker_id: J7KBSL
   speaker_avatar: skyksandr.jpg
   speaker_name: Aleksandr Kunin
@@ -391,6 +402,7 @@
   day: 2
   track: TR209
   lang: EN
+  video_id: F9k32XvpOkA
   speaker_id: KVTZHB
   speaker_avatar: ydah_.jpg
   speaker_name: Yudai Takada
@@ -421,6 +433,7 @@
   day: 2
   track: TR209
   lang: cht
+  video_id: Qscc50w2_kg
   speaker_id: UNVNAN
   speaker_avatar: cindyliu923.jpg
   speaker_name: Cindy Liu
@@ -452,6 +465,7 @@
   day: 2
   track: TR209
   lang: EN
+  video_id: gD85IyOwD34
   speaker_id: KRTWYM
   speaker_avatar: Envek.jpg
   speaker_name: Andrey Novikov
@@ -482,6 +496,7 @@
   day: 2
   track: TR209
   lang: cht
+  video_id: oItkKKQ0_aU
   subject: "Crafting AI-Driven Workflow for Ruby"
   speaker_id: X338CA
   speaker_avatar: elct9620.jpg

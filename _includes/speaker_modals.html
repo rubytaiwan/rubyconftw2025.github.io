@@ -105,6 +105,18 @@
               {{ schedule.abstract | markdownify }}
             </p>
           </div>
+          {% if schedule.video_id %}
+          <div class="mt-4 aspect-video w-full">
+            <iframe
+              class="w-full h-full rounded-lg"
+              src="https://www.youtube.com/embed/{{ schedule.video_id }}"
+              title="{{ schedule.subject }}"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+            ></iframe>
+          </div>
+          {% endif %}
           <!--
           <div
             class="px-3 py-1 text-green-normal bg-green-light border border-green-normal rounded-md w-fit"
